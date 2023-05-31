@@ -1,0 +1,51 @@
+<!-- ToDo: Responsive
+     let user add his own replacements
+     use String.prototype.replace() in encrypt
+     use FLIPPEDKEY in decrypt
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptando Challenge 01</title>
+</head>
+
+<body class="body">
+    <header>
+        <img src="images/logoA.svg" alt="logo de Alura" class="logo">
+    </header>
+
+    <div class="panels">
+        <div class="leftPanel">
+            <textarea name="cryptInput" id="cryptInput" placeholder="Ingrese el texto aquí" autofocus class="cryptInput"></textarea>
+
+            <div class="messageArea">
+                <img src="images/warning.svg" alt="Warning:" style="vertical-align: middle;">
+                <p id="message" onsubmit="return displayMessage()" style="vertical-align: middle; display: inline;">Solo minúsculas y sin acentos</p>
+            </div>
+
+            <div>
+                <button onclick="encryptText()" class="buttonCrypt">Encriptar</button>
+                <button onclick="decryptText()" class="buttonDecrypt">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="rightPanel">
+            <textarea name="cryptOutput" id="cryptOutput" placeholder="No se ha encontrado ningún mensaje" readonly class="cryptOutput"></textarea>
+
+            <button id="copyButton" hidden class="buttonCopy">Copiar</button>
+        </div>
+    </div>
+</body>
+
+<footer class="footer">
+    <p>Miguel A. Garza</p>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
