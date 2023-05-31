@@ -55,7 +55,7 @@ function encryptText() {
      */
     for (let i = 0; i < TEXTINPUT.length; i++) {
         const element = TEXTINPUT[i];
-        if (Object.keys(KEY).includes(element)) {   // faund current char in KEY's key
+        if (Object.keys(KEY).includes(element)) {   // found current char in KEY's key
             textOutput += KEY[element];             // adding the replacment
         } else {
             textOutput += element;                  // adding regular char outside the scope of KEY
