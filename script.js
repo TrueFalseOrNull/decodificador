@@ -32,7 +32,7 @@ const FLIPPEDKEY = flip(KEY);
 function readText(input) {
     let checkInput = document.getElementById(input).value
     if (/[A-ZÁÉÍÓÚáéíóú]/.test(checkInput)) {
-        alert("Cambiando maysuculas por minusculas y quitando acentos.");
+        alert("Cambiando mayúsculas por minúsculas y quitando acentos.");
     }
     return checkInput
         .toLowerCase()
